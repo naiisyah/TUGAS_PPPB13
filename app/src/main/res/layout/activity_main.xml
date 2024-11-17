@@ -1,0 +1,60 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Button untuk memunculkan notifikasi -->
+    <Button
+        android:id="@+id/btnNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan Notifikasi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Like -->
+    <ImageView
+        android:id="@+id/btnLike"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_like"
+        app:layout_constraintTop_toBottomOf="@id/btnNotification"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Counter Like -->
+    <TextView
+        android:id="@+id/tvLikeCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/btnLike"
+        app:layout_constraintTop_toTopOf="@id/btnLike"
+        android:layout_marginStart="8dp" />
+
+    <!-- Tombol Dislike -->
+    <ImageView
+        android:id="@+id/btnDislike"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_dislike"
+        app:layout_constraintTop_toBottomOf="@id/btnNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Counter Dislike -->
+    <TextView
+        android:id="@+id/tvDislikeCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/btnDislike"
+        app:layout_constraintTop_toTopOf="@id/btnDislike"
+        android:layout_marginEnd="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
